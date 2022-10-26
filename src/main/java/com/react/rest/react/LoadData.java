@@ -22,10 +22,10 @@ public class LoadData implements CommandLineRunner {
 
   @Override
   public void run(String... args) throws Exception {
-    repo.save(new Employee("Frodo", "Baggins", "ring bearer"));
+    repo.save(new Employee("Frodo", "Baggins", "Ring Bearer"));
     repo.save(new Employee("Bilbo", "Baggins", "Burglar"));
     repo.save(new Employee("Legolas", "Greenleaf", "Elf"));
-    repo.save(new Employee("Samwise", "gamgee", "gardener"));
+    repo.save(new Employee("Samwise", "Gamgee", "Gardener"));
     repo.save(new Employee("Gandalf", "The Grey", "Wizard"));
     repo.save(new Employee("Gimli", "Durin", "Warrior"));
 
