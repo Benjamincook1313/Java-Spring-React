@@ -1,10 +1,15 @@
 package com.react.rest.react.entity;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+//@Getter
+//@Setter
 public class Employee {
 
   @Id
@@ -59,10 +64,7 @@ public class Employee {
     if (this == o) return true;
     if (o == null || getClass() != o.getClass()) return false;
     Employee employee = (Employee) o;
-    return Objects.equals(id, employee.id) &&
-        Objects.equals(firstName, employee.firstName) &&
-        Objects.equals(lastName, employee.lastName) &&
-        Objects.equals(description, employee.description);
+    return Objects.equals(id, employee.id) && Objects.equals(firstName, employee.firstName) && Objects.equals(lastName, employee.lastName) && Objects.equals(description, employee.description);
   }
 
   @Override

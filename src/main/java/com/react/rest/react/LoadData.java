@@ -19,7 +19,6 @@ public class LoadData implements CommandLineRunner {
     this.repo = repo;
   }
 
-
   @Override
   public void run(String... args) throws Exception {
     repo.save(new Employee("Frodo", "Baggins", "Ring Bearer"));
